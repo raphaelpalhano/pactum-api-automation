@@ -1,0 +1,32 @@
+{
+  "name": "poc_pactum",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx ts-mocha src/**/*.spec.ts",
+    "test:report": "npm run test  --reporter spec --reporter mochawesome --reporter-options reportDir=results --timeout=10000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.0",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.16",
+    "chai": "^5.0.3",
+    "dotenv": "^16.4.1",
+    "eslint": "^8.56.0",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "pactum": "^3.6.0",
+    "ts-mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "genson-js": "^0.0.8",
+    "typescript": "^5.3.3"
+  }
+}
